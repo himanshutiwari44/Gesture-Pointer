@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hand Gesture Control System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Hand Gesture Control System</h1>
+        </header>
+
+        <main>
+            <section class="control-panel">
+                <div class="status-indicator">
+                    <div class="status-dot" id="status-dot"></div>
+                    <span id="status-text">Loading...</span>
+                </div>
+                
+                <div class="actions">
+                    <button id="startBtn" class="btn primary">
+                        <i class="fas fa-play"></i> Start Gesture Control
+                    </button>
+                    <button id="screenshotBtn" class="btn secondary" disabled>
+                        <i class="fas fa-camera"></i> Take Screenshot
+                    </button>
+                </div>
+            </section>
+
+            <section class="gesture-guide">
+                <h2>Gesture Guide</h2>
+                <div class="gestures-container">
+                    <div class="gesture-card">
+                        <div class="gesture-icon"><img src="images/Mouse_moving.png" alt="can't load image"></div>
+                        <h3>Move Cursor</h3>
+                        <p>Move your hand to control the cursor</p>
+                    </div>
+                    <div class="gesture-card">
+                        <div class="gesture-icon"><img src="images/Left_click.png" alt="can't load image"></div>
+                        <h3>Left Click</h3>
+                        <p>Index finger touching thumb</p>
+                    </div>
+                    <div class="gesture-card">
+                        <div class="gesture-icon"><img  src="images/Right_click.png" alt="can't load image"></div>
+                        <h3>Right Click</h3>
+                        <p>Middle finger touching thumb</p>
+                    </div>
+                    <div class="gesture-card">
+                        <div class="gesture-icon"><img src="images/Double_click.png" alt="can't load imamge"></div>
+                        <h3>Double Click</h3>
+                        <p>Ring finger touching thumb</p>
+                    </div>
+                    <div class="gesture-card">
+                        <div class="gesture-icon"><img src="images/Drag.png" alt="can't load image"></div>
+                        <h3>Drag</h3>
+                        <p>All fingers down</p>
+                    </div>
+                    <div class="gesture-card">
+                        <div class="gesture-icon"><img src="images/Scrolling_down.png" alt="can't load image"></div>
+                        <h3>Scroll Down</h3>
+                        <p>Index up, others down</p>
+                    </div>
+                    <div class="gesture-card">
+                        <div class="gesture-icon"><img src="images/Scrolling_up.png" alt="can't load image"></div>
+                        <h3>Scroll Up</h3>
+                        <p>Little finger up, others down</p>
+                    </div>
+                    <div class="gesture-card">
+                        <div class="gesture-icon"><img src="images/Zooming_in.png" alt="can't load image"></div>
+                        <h3>Zoom in </h3>
+                        <p>Index and middle up,gap between them</p>
+                    </div>
+                     <div class="gesture-card">
+                        <div class="gesture-icon"><img src="images/Zooming_out.png" alt="can't load image"></div>
+                        <h3>Zoom out </h3>
+                        <p>Index and middle up,NO gap between them</p>
+                    </div>
+                    <!-- <div class="gesture-card new-gesture">
+                        <div class="gesture-icon">🖖</div>
+                        <h3>Screenshot</h3>
+                        <p>Index, middle, and ring fingers up</p>
+                    </div> -->
+                     <div class="gesture-card">
+                        <div class="gesture-icon"><img src="images/Mouse_freezing.png" alt="can't load image"></div>
+                        <h3>Freeze Cursor </h3>
+                        <p>thumb closed rest fingers up</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="screenshots">
+                <h2>Screenshots</h2>
+                <div id="screenshots-container" class="screenshots-grid"></div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Hand Gesture Control System &copy; 2025</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
